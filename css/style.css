@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  background: rgb(10, 10, 10);
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  color: azure;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  margin-top: 15px;
+}
+
+iframe {
+  display: flex;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+audio {
+  display: flex;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin: 0;
+  padding: 10px;
+  border: 10px;
+  text-align: center;
+  background: rgb(255, 35, 35);
+  box-shadow: white 5px 5px 5px;
+}
+
+.navigation {
+  display: block;
+  padding: 0 1rem;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navigation-background {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.columns {
+  display: flex;
+}
+
+.main-content {
+  width: 65%;
+  margin: 0;
+  padding: 0 auto;
+}
+
+.sidebar {
+  width: 30%;
+  margin: 0 25px;
+  padding: 0 auto;
+}
+
+.col-text {
+  margin: 0;
+  padding: 20px 15px 0;
+}
+
+.col-image {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.background-column {
+  display: flex;
+  background: rgb(33, 33, 33);
+  box-shadow: white 5px 5px 5px;
+  margin-bottom: 25px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: rgb(255, 35, 35);
+}
+
+.shrek {
+  width: 700px;
+  height: auto;
+}
+
+#demo {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(255, 35, 35);
+}
+
+.queue-pictures {
+  display: flex;
+}
+
+.center-pictures {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

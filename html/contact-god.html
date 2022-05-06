@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <ul class="navigation-background">
+        <li style="float: left" class="navigation">
+          <a href="index.html">Home</a>
+        </li>
+        <li style="float: left" class="navigation">
+          <a href="auuugh.html">AUUUGH</a>
+        </li>
+        <li style="float: left" class="navigation">
+          <a href="fact.html">Fact</a>
+        </li>
+        <li style="float: right" class="navigation">
+          <a href="contact-god.html" class="active">Contact God</a>
+        </li>
+      </ul>
+      <h1>Estimated time in queue</h1>
+    </header>
+
+    <p id="demo"></p>
+    <script>
+      var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+      var x = setInterval(function () {
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("demo").innerHTML =
+          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+
+    <div class="queue-pictures">
+      <img
+        src="../images/heaven.jpg"
+        height="300px"
+        alt="jesus holding out hand in heaven"
+        class="center-pictures"
+        style="margin-right: 10px"
+      />
+      <img
+        src="../images/hell.jpg"
+        height="300px"
+        alt="satan smirking at office desk"
+        class="center-pictures"
+        style="margin-left: 10px"
+      />
+    </div>
+  </body>
+</html>
